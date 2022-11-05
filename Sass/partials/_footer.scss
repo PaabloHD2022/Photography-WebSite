@@ -9,7 +9,7 @@ footer{
     padding: $spacing-xsmall;
     background: $background-gradient-2;
 	font-family: $font-secondary;
-    height: 140px;
+    height: 120px;
     width: 100%;
 
     & .footer__menu{
@@ -24,7 +24,7 @@ footer{
             justify-content: space-around;
             
             & a {
-                padding: $spacing-small;
+                padding: $spacing-xsmall;
                 color: $alternative2;
                 text-decoration: none;
                 width: 180px;
@@ -43,7 +43,7 @@ footer{
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
-            width: 100%;
+            width: 90%;
 
 
         & .redes__container{
