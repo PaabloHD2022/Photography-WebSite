@@ -1,0 +1,89 @@
+    /*---Colors---*/
+    $primary: #000000;
+    $secondary: #303030;
+    $alternative: #cccccc;
+    $alternative2: #fff;
+    $alternative3: #e7e7e7;
+    $alternative4: #f78710;
+    $alternative5: #0075ff;
+    $hover-background: #414141;
+    $hover-text-color: #fff;
+    $text-color: #2B2B2B;
+    $text-color-2: #fff;
+    $text-color-3: #5f5f5f;
+    $text-color-4: #414141;
+    $text-color-5: #151461;
+    $text-color-6: #ff0000;
+    $text-color-7: green;
+    $text-color-8: #0A160C;
+    $text-color-9: #0075ff;
+    $text-color-10: #3b7888;
+    $titulo-h1-color: #606060;
+    $titulo-h1-color-2: #151461;
+    $titulo-h2-color: #494949;
+    $titulo-h3-color: #fff;
+    $background-gradient-body: repeating-linear-gradient(90deg, #c4c0c0, #fff 20px, #fbfbfb 20px, #fbfbfb 40px);
+    $background-gradient: linear-gradient(to top, #727272, #d1d1d1);
+    $background-gradient-2: linear-gradient(to top, #000000, #1b1b1b);
+    $background-gradient-3: linear-gradient(to top, #292929, #5a5a5a);
+    $background-gradient-4: linear-gradient(to top, #949494, #dfdfdf);
+    $background-gradient-5: -webkit-radial-gradient(bottom right, #0A160c 10%, #1d3321 40%, #0a160c 60%);
+    $background-color: #0A160C;
+    $background-color-2: #000;
+    $background-color-3-transparent: rgba(0, 103, 123, 0.7);
+    $box-shadow: rgb(116, 116, 116);
+    $facebook: #225bd7;
+    $instagram: #e41d41;
+    $twitter: #158be6;
+    $whatsapp: #0aa743;
+
+    /*---Spacing---*/
+    $spacing-xxlarge: 45rem;
+    $spacing-xlarge: 15rem;
+    $spacing-large-3: 7rem;
+    $spacing-large-2: 5.5rem;
+    $spacing-large: 5rem;
+    $spacing-medium: 3rem;
+    $spacing-base: 2rem;
+    $spacing-small: 1.5rem;
+    $spacing-xsmall: 1rem;
+    $spacing-xxsmall: 0.5rem;
+    $spacing-xxxsmall: 0.25rem;
+
+    /*---Font-Family---*/
+    $font-principal: 'Roboto', sans-serif;
+    $font-secondary: 'Barlow', sans-serif;
+    $font-eventual: 'Anton', sans-serif;
+    
+
+    /*---Font Sizes---*/
+    $text-xlarge: 4.0em;
+    $text-large: 3.5em;
+    $text-medium: 2.4em;
+    $text-base-2: 2em;
+    $text-base: 1.8em;
+    $text-small: 1.6em;
+    $text-xsmall: 1.4em;
+    $text-xxsmall: 1.2em;
+    $text-xxxsmall: 0.8em;
+
+    /*---Border Radius---*/
+    $radius-full: 10rem;
+    $radius-large: 2rem;
+    $radius-medium: 1.5rem;
+    $radius-small: 1rem;
+    $radius-xsmall: 0.6rem;
+
+    /*---Line-height---*/
+    $line-height-xlarge: 5em;
+    $line-height-large: 1.8em;
+    $line-height-base: 1.5em;
+    $line-height-small: 1.2em;
+    $line-height-xsmall: 1em;
+    $line-height-xxsmall: 0.8em;
+
+    /*---Image-Size---*/
+    $width-large: 7rem;
+    $width-base: 5rem;
+    $width-small: 3rem;
+    $width-xsmall: 1rem;

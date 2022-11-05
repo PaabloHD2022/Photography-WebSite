@@ -1,0 +1,262 @@
+//FOOTER
+
+footer{
+    display: grid;
+    grid-gap: $spacing-small;
+    grid-template-columns: (1fr);
+    grid-template-rows: (1fr);
+    grid-template-areas: 'footer';
+    padding: $spacing-xsmall;
+    background: $background-gradient-2;
+	font-family: $font-secondary;
+    height: 140px;
+    width: 100%;
+
+    & .footer__menu{
+        display: flex;
+        flex-direction:column;
+        justify-content: space-around;
+        align-items: center;
+    
+        & .footer__nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            
+            & a {
+                padding: $spacing-small;
+                color: $alternative2;
+                text-decoration: none;
+                width: 180px;
+                text-align: center;
+                font-size: $text-small;
+                text-transform: uppercase;
+        
+                &:hover {
+                color: $alternative5;
+                transition: 0.2s ease all;
+                }
+            }
+        }       
+
+        & .redes__info{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 100%;
+
+
+        & .redes__container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+                    
+        
+            & ul li{
+                display: inline-block;
+                text-align: center;
+                margin: 0 $spacing-small;
+                
+                & .facebook:hover{
+                    color: $facebook;
+                    transition: 0.3s ease all;
+                }
+        
+                & .twitter:hover{
+                    color: $twitter;
+                    transition: 0.3s ease all;
+                }
+        
+                & .instagram:hover{
+                    color: $instagram;
+                    transition: 0.3s ease all;
+                }
+        
+                & .whatsapp:hover{
+                    color: $whatsapp;
+                    transition: 0.3s ease all;
+                }
+        
+                & a{
+                    display: inline-block;
+                    color: $alternative2;
+                    font-size: $text-base-2; 
+                    
+                    &:hover{
+                        transform: translateY(3px) scale(1.05);
+                    }
+                }   
+            }
+        }
+
+        & .info__footer{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                
+
+                & .email a{
+                    font-size: $text-xsmall;
+                    text-decoration: none;
+                    color: $alternative2;
+                    text-align: center;
+                    margin-right: 30px;
+                    
+                    &:hover {
+                        color: $alternative5;
+                        transition: 0.2s ease all;
+                    }
+                }
+        
+                & .phone a{
+                    font-size: $text-xsmall;
+                    text-decoration: none;
+                    color: $alternative2;
+                    text-align: center;  
+                    padding: $spacing-xsmall;
+                    margin-right: 30px;               
+
+                    &:hover {
+                        color: $alternative5;
+                        transition: 0.2s ease all;
+                    }
+                }
+
+            & .copyright{
+                    font-size: $text-xsmall;
+                    color: $alternative2;
+                    text-align: center;
+                }
+            }
+        }
+    }    
+}
+
+
+//RESPONSIVE
+
+@media (max-width: 1100px){
+    
+}
+
+@media (max-width: 786px){   
+    .footer__menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        place-content: flex-start;
+    
+        & .footer__nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: $spacing-xsmall;
+        }       
+
+        & .redes__info{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+
+            & .redes__container{
+                display: flex;
+                flex-direction: row;
+                align-items: center;                       
+            
+                }
+            }
+        }
+}
+
+
+
+@media (max-width: 576px) {
+    .footer__menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        place-content: flex-start;
+    
+        & .footer__nav{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }       
+
+        & .redes__info{
+            width: 100%;
+            display: flex;
+            flex-direction: column;            
+
+            & .redes__container{
+                display: flex;
+                flex-direction: row;
+                align-items: center;   
+            
+                & ul li{
+                    display: inline-block;
+                    margin: 0.5rem;
+                    width: $width-small;
+                    height: $width-small;
+                    text-align: center;
+                }            
+            }
+
+            
+            & .info__footer{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+    
+                & .email a{
+                    width: 100%;
+                    font-size: $text-small;
+                    text-decoration: none;
+                    color: $alternative2;
+                    text-align: center;
+                    margin-right: 30px;
+                }
+            
+                & .phone a{
+                    font-size: $text-small;
+                    text-decoration: none;
+                    color: $alternative2;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 320px){
+    .redes__info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 90%;
+        
+        & .redes__container{
+            display: flex;
+            flex-direction: row;
+            align-items: center; 
+        
+            & ul li{
+                margin: 0;
+                width: $width-small;
+                height: $width-small;
+                margin-right: $spacing-base;
+            } 
+            
+            &>a{
+                display: inline-block;
+                width: $width-small;
+                height: $width-small;
+                text-align: center;
+                
+            }
+        }
+    }
+}
