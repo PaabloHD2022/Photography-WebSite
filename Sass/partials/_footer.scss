@@ -17,12 +17,14 @@ footer{
         flex-direction:column;
         justify-content: space-around;
         align-items: center;
+        
     
-        & .footer__nav{
+        & .footer__links{
             display: flex;
             flex-direction: row;
             justify-content: space-around;
-            
+            background: none;
+                        
             & a {
                 padding: $spacing-xsmall;
                 color: $alternative2;
@@ -43,27 +45,22 @@ footer{
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
-            width: 90%;
+            width: 100%;
 
 
         & .redes__container{
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
+            justify-content: space-evenly;
+            width: 1000px;
                     
-        
             & ul li{
                 display: inline-block;
                 text-align: center;
-                margin: 0 $spacing-small;
+                margin: 0 $spacing-base;
                 
                 & .facebook:hover{
                     color: $facebook;
-                    transition: 0.3s ease all;
-                }
-        
-                & .twitter:hover{
-                    color: $twitter;
                     transition: 0.3s ease all;
                 }
         
@@ -100,7 +97,7 @@ footer{
                     text-decoration: none;
                     color: $alternative2;
                     text-align: center;
-                    margin-right: 30px;
+                    margin-right: $spacing-xlarge-2;                    
                     
                     &:hover {
                         color: $alternative5;
@@ -108,21 +105,7 @@ footer{
                     }
                 }
         
-                & .phone a{
-                    font-size: $text-xsmall;
-                    text-decoration: none;
-                    color: $alternative2;
-                    text-align: center;  
-                    padding: $spacing-xsmall;
-                    margin-right: 30px;               
-
-                    &:hover {
-                        color: $alternative5;
-                        transition: 0.2s ease all;
-                    }
-                }
-
-            & .copyright{
+                & .copyright{
                     font-size: $text-xsmall;
                     color: $alternative2;
                     text-align: center;

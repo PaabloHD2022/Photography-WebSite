@@ -1,74 +1,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
 
-.projects{
+body{
     background: $background-gradient-5;
 }
 
-.articulos{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    & h2{
-        font-family: 'Roboto', sans-serif;
-        font-size: $text-xlarge;
-        color: $text-color-2;
-        text-transform: uppercase;
-        padding: $spacing-large;
-    }
-
-    & .parent{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        grid-column-gap: 40px;
-        grid-row-gap: 40px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-
-        & h3{
-            font-size: $text-base-2;
-            color: $text-color-10;
-            font-family: 'Roboto', sans-serif;
-            text-transform: uppercase;
-            padding-left: $spacing-base;
-
-        }
-
-        & p{
-            font-size: $text-xsmall;
-            color: $text-color-2;
-            padding: $spacing-base;
-            font-family: 'Roboto', sans-serif;
-            text-align: justify;
-            width: 300px
-        }
-
-
-        .img__container{
-            overflow: hidden;
-            width: 350px;
-            height: 500px;
-
-            img{
-                width: 350px;
-                height: 500px;
-    
-                &:hover {
-                    filter: sepia(90%);
-                    transform:scale(1.1);
-                   /*  overflow: hidden; */
-                    transition: ease-in-out all .8s;        
-                }
-            }            
-        }        
-    }
-
-.div-articulos{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: initial;
+.titulo {
+	font-size: 40px;
+	text-transform: uppercase;
+	letter-spacing: 7px;
+	color: $text-color-2;
+	font-family: 'Roboto' sans-serif;
 }
 
+.info-proyecto{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	& .titulo-proyecto{
+		font-size: $text-large;
+		color: $text-color-3;
+		margin-bottom: $spacing-small;
+	}
+
+	& .descripcion-proyecto{
+		font-size: $text-small;
+		color: $text-color-3;
+		margin-bottom: $spacing-small;
+		text-align: justify;
+	}
+}
+
+
+.galeria img {
+	box-shadow: 0 8px 10px -4px rgba(0,0,0,.6);
+	border-radius: 5px;
+}
+
+.materialbox-caption {
+	bottom: 30px;
+	right: 0;
+	width: 40%;
+	height: auto;
+	padding: 10px;
+	margin: auto;
+	background: #000;
+	box-shadow: 5px 5px #fff;
+	font-size: 20px;
+	color: #fff;
+	line-height: 28px;
+}
+
+.galeria .col {
+	margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px){
+	.materialbox-caption {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 992px){
+	.materialbox-caption {
+		width: 70%;
+	}
+}
