@@ -8,6 +8,7 @@ body{
 	font-size: 60px;
 	color: $text-color-2;
 	text-transform: uppercase;
+	margin-top: $spacing-large;
 }
 
 .info-proyecto{
@@ -16,16 +17,16 @@ body{
 	justify-content: center;
 
 	& .titulo-proyecto{
-		font-size: $text-large;
+		font-size: $text-medium;
 		color: $text-color-3;
-		margin-bottom: $spacing-small;
+		margin-bottom: $spacing-xsmall;
 	}
 
 	& .descripcion-proyecto{
 		font-size: $text-small;
 		color: $text-color-3;
 		margin-bottom: $spacing-small;
-		text-align: justify;
+		text-align: center;
 	}
 }
 
