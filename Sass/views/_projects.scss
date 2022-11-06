@@ -1,15 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
 
 body{
     background: $background-gradient-5;
 }
 
-.titulo {
-	font-size: 40px;
-	text-transform: uppercase;
-	letter-spacing: 7px;
+.title {
+	font-family: $font-secondary;
+	font-size: 60px;
 	color: $text-color-2;
-	font-family: 'Roboto' sans-serif;
+	text-transform: uppercase;
 }
 
 .info-proyecto{
