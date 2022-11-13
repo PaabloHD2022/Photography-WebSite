@@ -81,28 +81,27 @@ h2 {
             color: #0075ff; }
 
 footer {
-  display: grid;
-  grid-gap: 1.5rem;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: 'footer';
-  padding: 1rem;
-  background: linear-gradient(to top, #000000, #1b1b1b);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   font-family: "Barlow", sans-serif;
-  height: 120px;
+  background: linear-gradient(to top, #000000, #1b1b1b);
+  height: 150px;
   width: 100%; }
   footer .footer__menu {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center; }
+    align-items: center;
+    width: 100%;
+    margin: 0 auto; }
     footer .footer__menu .footer__links {
       display: flex;
       flex-direction: row;
-      justify-content: space-around;
+      justify-content: center;
       background: none; }
       footer .footer__menu .footer__links a {
-        padding: 1rem;
+        padding: 1.5rem;
         color: #fff;
         text-decoration: none;
         width: 180px;
@@ -115,17 +114,17 @@ footer {
     footer .footer__menu .redes__info {
       display: flex;
       flex-direction: row;
-      justify-content: space-evenly;
+      justify-content: center;
       width: 100%; }
       footer .footer__menu .redes__info .redes__container {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        width: 1000px; }
+        width: 50%; }
         footer .footer__menu .redes__info .redes__container ul li {
           display: inline-block;
           text-align: center;
-          margin: 0 2rem; }
+          padding: 3rem; }
           footer .footer__menu .redes__info .redes__container ul li .facebook:hover {
             color: #225bd7;
             transition: 0.3s ease all; }
@@ -138,23 +137,25 @@ footer {
           footer .footer__menu .redes__info .redes__container ul li a {
             display: inline-block;
             color: #fff;
-            font-size: 2em; }
+            font-size: 2.4em; }
             footer .footer__menu .redes__info .redes__container ul li a:hover {
               transform: translateY(3px) scale(1.05); }
       footer .footer__menu .redes__info .info__footer {
         display: flex;
         flex-direction: row;
-        justify-content: space-around; }
+        justify-content: center;
+        width: 50%; }
         footer .footer__menu .redes__info .info__footer .email a {
-          font-size: 1.4em;
+          font-size: 1.6em;
           text-decoration: none;
           color: #fff;
           text-align: center; }
           footer .footer__menu .redes__info .info__footer .email a:hover {
             color: #0075ff;
             transition: 0.2s ease all; }
-        footer .footer__menu .redes__info .info__footer .copyright {
-          font-size: 1.4em;
+        footer .footer__menu .redes__info .info__footer .email p {
+          font-size: 1.6em;
+          text-decoration: none;
           color: #fff;
           text-align: center; }
 

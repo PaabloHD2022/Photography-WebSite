@@ -1,32 +1,30 @@
 //FOOTER
 
 footer{
-    display: grid;
-    grid-gap: $spacing-small;
-    grid-template-columns: (1fr);
-    grid-template-rows: (1fr);
-    grid-template-areas: 'footer';
-    padding: $spacing-xsmall;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    font-family: $font-secondary;
     background: $background-gradient-2;
-	font-family: $font-secondary;
-    height: 120px;
+	height: 150px;
     width: 100%;
-
+    
     & .footer__menu{
         display: flex;
         flex-direction:column;
         justify-content: space-around;
         align-items: center;
-        
+        width: 100%;
+        margin: 0 auto;      
     
         & .footer__links{
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
+            justify-content: center;
             background: none;
                         
             & a {
-                padding: $spacing-xsmall;
+                padding: $spacing-small;
                 color: $alternative2;
                 text-decoration: none;
                 width: 180px;
@@ -44,7 +42,7 @@ footer{
         & .redes__info{
             display: flex;
             flex-direction: row;
-            justify-content: space-evenly;
+            justify-content: center;
             width: 100%;
 
 
@@ -52,48 +50,49 @@ footer{
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
-            width: 1000px;
+            width: 50%;
                     
-            & ul li{
-                display: inline-block;
-                text-align: center;
-                margin: 0 $spacing-base;
-                
-                & .facebook:hover{
-                    color: $facebook;
-                    transition: 0.3s ease all;
-                }
-        
-                & .instagram:hover{
-                    color: $instagram;
-                    transition: 0.3s ease all;
-                }
-        
-                & .whatsapp:hover{
-                    color: $whatsapp;
-                    transition: 0.3s ease all;
-                }
-        
-                & a{
+                & ul li{
                     display: inline-block;
-                    color: $alternative2;
-                    font-size: $text-base-2; 
+                    text-align: center;
+                    padding: $spacing-medium;
                     
-                    &:hover{
-                        transform: translateY(3px) scale(1.05);
+                    & .facebook:hover{
+                        color: $facebook;
+                        transition: 0.3s ease all;
                     }
-                }   
+            
+                    & .instagram:hover{
+                        color: $instagram;
+                        transition: 0.3s ease all;
+                    }
+            
+                    & .whatsapp:hover{
+                        color: $whatsapp;
+                        transition: 0.3s ease all;
+                    }
+            
+                    & a{
+                        display: inline-block;
+                        color: $alternative2;
+                        font-size: $text-medium; 
+                        
+                        &:hover{
+                            transform: translateY(3px) scale(1.05);
+                        }
+                    }   
+                }
             }
-        }
 
             & .info__footer{
                 display: flex;
                 flex-direction: row;
-                justify-content: space-around;
+                justify-content: center;
+                width: 50%;
                 
 
                 & .email a{
-                    font-size: $text-xsmall;
+                    font-size: $text-small;
                     text-decoration: none;
                     color: $alternative2;
                     text-align: center;                                        
@@ -103,12 +102,13 @@ footer{
                         transition: 0.2s ease all;
                     }
                 }
-        
-                & .copyright{
-                    font-size: $text-xsmall;
-                    color: $alternative2;
+
+                & .email p{
+                    font-size: $text-small;
+                    text-decoration: none;
+                    color: $text-color-2;
                     text-align: center;
-                }
+                    }
             }        
         }
     }    
