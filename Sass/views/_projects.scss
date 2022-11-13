@@ -61,20 +61,20 @@ body{
 	font-size: $text-medium;
 	text-align: center;
 	font-family: $font-principal;
+	height: 25px;
 }
 
 .fecha__proyecto{
 	color: $text-color-3;
 	font-size: $text-small;
 	text-align: center;
-	vertical-align: middle;
 }
 
 .info__article{
 	color: $text-color-3;
 	font-size: $text-xsmall;
 	text-align: justify;
-	line-height: 25px;
+	line-height: 18px;
 	font-family: $font-principal;
-	font-weight: lighter;
+	font-weight: 400;
 }

@@ -15,79 +15,72 @@ main{
     background: $background-gradient-5;
 
 		.hero {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			color: #fff;
-			margin-top: 70px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		color: #fff;
+		margin-top: 70px;
 
-			& h1 {
-				font-family: $font-principal;
-				font-size: $text-xxlarge;
-				color: $text-color-2;
-				max-width: 100%;
-				margin-bottom: $spacing-large;
-				padding-left: $spacing-xxlarge;
-				padding-right: $spacing-xxlarge;
-				text-align: center;
-				transform: scale(0.94);
-				animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
-	
-				@keyframes scale {
-					100% {
-						transform: scale(1);
-						}
+		& h1 {
+			font-family: $font-principal;
+			font-size: $text-xlarge;
+			color: $text-color-2;
+			max-width: 100%;
+			margin-bottom: $spacing-medium;
+			text-align: center;
+			transform: scale(0.94);
+			animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+
+			@keyframes scale {
+				100% {
+					transform: scale(1);
 					}
-				
-					span {
-						display: inline-block;
-						opacity: 0;
-						filter: blur(4px);
-					}
-				
-					span:nth-child(1) {
-					animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
-					font-weight: lighter;
-					}
-					
-					span:nth-child(2) {
-						animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
-						font-weight: lighter;
-					}
-					
-					@keyframes fade-in {
-						100% {
-						opacity: 1;
-						filter: blur(0);
-					
-					}            
 				}
-			}
 			
-			/* & h1 {
-				font-family: $font-secondary;
-				font-size: 60px;
-				margin-bottom: 50px;
-		} */
+				span {
+					display: inline-block;
+					opacity: 0;
+					filter: blur(4px);
+				}
+			
+				span:nth-child(1) {
+				animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+				font-weight: lighter;
+				}
+				
+				span:nth-child(2) {
+					animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+					font-weight: lighter;
+				}
+				
+				@keyframes fade-in {
+					100% {
+					opacity: 1;
+					filter: blur(0);
+				
+				}            
+			}
+		}
 	}
 	
 	& .contenedor {
-		color: #f2f2f2;
-		font-size: 18px;
-		line-height: 30px;
+		color: $text-color-3;
+		line-height: 25px;
 		width: 100%;
-		max-width: 800px;
+		max-width: 900px;
 		margin: auto;
 		text-align: justify;
 
 		& p {
 			margin-bottom: 50px;
+			font-size: $text-small;
+			text-align: center;
+			font-family: $font-secondary;
 		}
 
 		& img {
-			width: 800PX;
-			height: 500px;
+			width: 900PX;
 			overflow: hidden;
 			margin-bottom: 40px;
 			border-radius: 5px;

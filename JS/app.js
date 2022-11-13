@@ -1,7 +1,4 @@
 const imagen1 = document.getElementById('imagen1');
-const imagen2 = document.getElementById('imagen2');
-const imagen3 = document.getElementById('imagen3');
-const imagen4 = document.getElementById('imagen4');
 
 const cargarImagen = (entradas, observador) => {
 	// console.log(entradas)
@@ -23,6 +20,3 @@ const observador = new IntersectionObserver(cargarImagen, {
 });
 
 observador.observe(imagen1);
-observador.observe(imagen2);
-observador.observe(imagen3);
-observador.observe(imagen4);
