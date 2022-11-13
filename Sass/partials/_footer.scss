@@ -86,18 +86,17 @@ footer{
             }
         }
 
-        & .info__footer{
+            & .info__footer{
                 display: flex;
                 flex-direction: row;
-                justify-content: space-evenly;
+                justify-content: space-around;
                 
 
                 & .email a{
                     font-size: $text-xsmall;
                     text-decoration: none;
                     color: $alternative2;
-                    text-align: center;
-                    margin-right: $spacing-xlarge-2;                    
+                    text-align: center;                                        
                     
                     &:hover {
                         color: $alternative5;
@@ -110,7 +109,7 @@ footer{
                     color: $alternative2;
                     text-align: center;
                 }
-            }
+            }        
         }
     }    
 }

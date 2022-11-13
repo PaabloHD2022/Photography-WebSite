@@ -2,66 +2,80 @@
 body{
     background: $background-gradient-5;
 }
+/*  Titulo Portfolio  */
 
-.title {
-	font-family: $font-secondary;
-	font-size: 60px;
+.title__gen{	
+	font-family: $font-principal;
+	font-size: $text-xxlarge;
 	color: $text-color-2;
+	max-width: 100%;
 	text-transform: uppercase;
-	margin-top: $spacing-large;
+	text-align: center;
+	transform: scale(0.65);
+	animation: scale 4s forwards cubic-bezier(0.5, 1, 0.89, 1);
+
+	@keyframes scale {
+		100% {
+		transform: scale(1);
+		}
+	}
+	
+	span {
+	display: inline-block;
+	opacity: 0;
+	filter: blur(4px);
+	}
+	
+	span:nth-child(1) {
+	animation: fade-in 0.8s 1.0s forwards cubic-bezier(0.11, 0, 0.5, 0);
+	font-weight: lighter;
+	}
+		
+	@keyframes fade-in {
+		100% {
+		opacity: 1;
+		filter: blur(0);
+		}            
+	}
 }
 
-.info-proyecto{
-	display: flex;
-	flex-direction: column;
+.container__principal{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.container__project{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 1fr;
 	justify-content: center;
-
-	& .titulo-proyecto{
-		font-size: $text-medium;
-		color: $text-color-3;
-		margin-bottom: $spacing-xsmall;
-	}
-
-	& .descripcion-proyecto{
-		font-size: $text-small;
-		color: $text-color-3;
-		margin-bottom: $spacing-small;
-		text-align: center;
-	}
+	padding: $spacing-large;
 }
 
-
-.galeria img {
-	box-shadow: 0 8px 10px -4px rgba(0,0,0,.6);
-	border-radius: 5px;
+.info__project{
+	width: 90%;
+	padding: $spacing-small;
 }
 
-.materialbox-caption {
-	bottom: 30px;
-	right: 0;
-	width: 40%;
-	height: auto;
-	padding: 10px;
-	margin: auto;
-	background: #000;
-	box-shadow: 5px 5px #fff;
-	font-size: 20px;
-	color: #fff;
-	line-height: 28px;
+.titulo__proyecto{
+	color: $text-color-7;
+	font-size: $text-medium;
+	text-align: center;
+	font-family: $font-principal;
 }
 
-.galeria .col {
-	margin-bottom: 20px;
+.fecha__proyecto{
+	color: $text-color-3;
+	font-size: $text-small;
+	text-align: center;
+	vertical-align: middle;
 }
 
-@media screen and (max-width: 600px){
-	.materialbox-caption {
-		width: 90%;
-	}
-}
-
-@media screen and (max-width: 992px){
-	.materialbox-caption {
-		width: 70%;
-	}
+.info__article{
+	color: $text-color-3;
+	font-size: $text-xsmall;
+	text-align: justify;
+	line-height: 25px;
+	font-family: $font-principal;
+	font-weight: lighter;
 }
