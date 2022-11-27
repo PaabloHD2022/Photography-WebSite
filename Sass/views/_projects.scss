@@ -6,9 +6,10 @@ body{
 
 .title__gen{	
 	font-family: $font-principal;
-	font-size: $text-xxlarge;
+	font-size: $text-xxxlarge;
 	color: $text-color-2;
 	max-width: 100%;
+	margin-top: $spacing-large-3;
 	text-align: center;
 	transform: scale(0.65);
 	animation: scale 4s forwards cubic-bezier(0.5, 1, 0.89, 1);
@@ -52,31 +53,31 @@ body{
 }
 
 .info__project{
-	width: 90%;
+	width: 95%;
 	padding: $spacing-small;
+	font-family: $font-secondary;
 }
 
 .titulo__proyecto{
 	color: $text-color-7;
 	font-size: $text-medium;
 	text-align: center;
-	font-family: $font-principal;
+	font-family: $font-secondary;
 	height: 25px;
 }
 
 .fecha__proyecto{
 	color: $text-color-3;
-	font-size: $text-small;
+	font-size: $text-xsmall;
 	text-align: center;
 }
 
 .info__article{
 	color: $text-color-3;
-	font-size: $text-xsmall;
+	font-size: $text-small;
 	text-align: justify;
-	line-height: 18px;
-	font-family: $font-principal;
-	font-weight: 400;
+	line-height: 22px;
+	font-family: $font-secondary;
 }
 
 .readMore_btn {
@@ -85,31 +86,32 @@ body{
 	border-radius: 20px;
 	color: white;
 	padding: 15px 32px;
-	font-size: 1.2em;
+	font-size: $text-xxsmall;
 	cursor: pointer;
+
+	&:hover {
+		box-shadow: none;
+		background-color: black;
+		color: #fff;
+		transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3.05s;
+		}
 }
 
-    .readMore_btn:hover {
-	box-shadow: none;
-	background-color: black;
-	color: #fff;
-	transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3.05s;
-    }    
+        
     
     .hideText {
 	display: none;
     
 		& p{
 		color: $text-color-3;
-		font-size: $text-xsmall;
+		font-size: $text-small;
 		text-align: justify;
-		line-height: 18px;
-		font-family: $font-principal;
-		font-weight: 400;
+		line-height: 22px;
+		font-family: $font-secondary;
 	}
 
 }
     
-    .showText {
-	display: block;
-    }
+.showText {
+display: block;
+}
