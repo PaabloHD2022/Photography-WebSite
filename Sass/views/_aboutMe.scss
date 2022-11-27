@@ -66,23 +66,23 @@ main{
 	
 	& .contenedor {
 		color: $text-color-3;
-		line-height: 25px;
+		line-height: 30px;
 		width: 100%;
-		max-width: 900px;
+		max-width: 1000px;
 		margin: auto;
 		text-align: justify;
 
 		& p {
 			margin-bottom: 50px;
-			font-size: $text-small;
+			font-size: $text-base;
 			text-align: center;
 			font-family: $font-secondary;
 		}
 
 		& img {
-			width: 900PX;
+			width: 1000PX;
 			overflow: hidden;
-			margin-bottom: 40px;
+			margin: 0 auto;
 			border-radius: 5px;
 			opacity: 0;
 			transform: scale(0.9);
@@ -101,5 +101,7 @@ main{
 			opacity: 1;
 			transform: scale(1) translateX(0);
 		}
+
+		
 	}
 }
