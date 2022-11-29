@@ -179,6 +179,7 @@ footer {
 
 /* Views */
 .principal {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -189,7 +190,7 @@ footer {
     flex-direction: column;
     justify-content: center; }
     .principal .info__principal .logo__edf {
-      width: 500px;
+      width: 400px;
       margin: auto;
       display: block;
       margin-top: 150px;
@@ -303,29 +304,6 @@ footer {
     opacity: 1;
     filter: blur(0); } }
 
-/* 
-.hidden {
-    opacity:0;
-} */
-/* .console-container {
-    font-family: 'Roboto', sans-serif;
-    font-size: 3em;
-    text-align: center;
-    height: 200px;
-    width: 700px;
-    color:white;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    margin:auto;
-}
-.console-underscore {
-    display:inline-block;
-    position:relative;
-    top:-0.14em;
-    left:10px;
-} */
 * {
   margin: 0;
   padding: 0;
@@ -441,7 +419,8 @@ body {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   justify-content: center;
-  padding: 5rem; }
+  padding: 5rem;
+  background: -webkit-radial-gradient(bottom right, #0A160c 10%, #1d3321 40%, #0a160c 60%); }
 
 .info__project {
   width: 95%;
